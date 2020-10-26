@@ -1,0 +1,29 @@
+.isloading {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title > h5 {
+  margin-right: 10%;
+}
+@media screen and (min-width: 771px) {
+  .cardContiner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 770px) {
+  .cardContiner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2%;
+  }
+}

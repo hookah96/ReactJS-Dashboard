@@ -1,0 +1,66 @@
+.placeFix {
+  position: 'fixed';
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  float: right;
+  margin: 0;
+  width: 78%;
+}
+
+@media screen and (max-width: 430px) {
+  .content {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .active {
+    animation: show 1000ms linear;
+  }
+
+  .exiting {
+    transform-origin: left;
+    animation: hide 1000ms linear;
+  }
+
+  .exitted {
+    display: none;
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    1% {
+      transform: translateX(-300px);
+    }
+    90% {
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes hide {
+    0% {
+    }
+    1% {
+      transform: translateX(0);
+    }
+    90% {
+      transform: translateX(-300px);
+    }
+    100% {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 770px) {
+  .content {
+    width: 67%;
+  }
+}

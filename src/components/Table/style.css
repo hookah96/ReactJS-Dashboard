@@ -1,0 +1,36 @@
+table {
+  width: 100%;
+  border-spacing: 0;
+  /* border-collapse: collapse; */
+}
+
+thead {
+  border-bottom: 2px solid #ccc;
+}
+
+.mobile-resp {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1vw;
+}
+thead {
+  text-align: left;
+}
+tbody {
+  text-align: match-parent;
+}
+
+@media screen and (min-width: 430px) {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    text-align: left;
+  }
+
+  tbody {
+    text-align: match-parent;
+  }
+}

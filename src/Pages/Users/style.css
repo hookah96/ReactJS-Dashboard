@@ -1,0 +1,36 @@
+.dltBtn {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #0d5d80;
+  width: 10%;
+  height: 10%;
+  padding: 0.5em 1em;
+  margin-right: 2em;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dltBtn.disabledBtn {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #ffffff;
+  background-color: #c0c0c0;
+}
+@media screen and (max-width: 430px) {
+  .mobile {
+    width: 100%;
+    margin-left: 1em;
+    font-size: 0.9rem;
+  }
+  .dltBtn,
+  .dltBtn.disabledBtn {
+    width: 100px;
+  }
+}

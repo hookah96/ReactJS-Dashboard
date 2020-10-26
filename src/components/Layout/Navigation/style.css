@@ -1,0 +1,124 @@
+.column {
+  float: left;
+  background-color: #0d5d80;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20vw;
+  height: 60%;
+  align-self: stretch;
+  margin-right: 0;
+}
+
+.list {
+  color: white;
+  list-style-type: none;
+  padding: 0;
+}
+
+.listItem {
+  padding: 1em 0 1em 2em;
+  border-bottom: 1px solid#1a6a8d;
+}
+
+.listItem:last-child {
+  border-bottom: none;
+}
+.navLink {
+  color: white;
+  text-decoration: none;
+}
+.listItem:hover {
+  background-color: #1a6a8d;
+}
+
+.listItem.selected {
+  background-color: #1a6a8d !important;
+  color: tomato;
+}
+
+.footer {
+  color: #8aa9b7;
+  text-align: center;
+  background-color: #0d5d80;
+  width: 100%;
+  margin-top: 85%;
+  padding-top: 48%;
+  padding-bottom: 10%;
+}
+
+@media screen and (max-width: 430px) {
+  .column {
+    position: fixed;
+    float: left;
+    background-color: #0d5d80;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35vw;
+    height: 67%;
+    align-self: stretch;
+    margin-right: 0;
+    padding-bottom: 30%;
+  }
+
+  .column.active {
+    animation: show 1500ms linear;
+    position: absolute;
+  }
+
+  .column.exiting {
+    transform-origin: left;
+    animation: hide 1000ms linear;
+    position: absolute;
+  }
+
+  .footer {
+    float: inherit;
+    position: absolute;
+    top: 60%;
+    padding: 0 0 0.5rem;
+    animation: show 1000ms linear;
+  }
+
+  @keyframes show {
+    from {
+      transform: translateX(-300px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes hide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-300px);
+    }
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 770px) {
+  .column {
+    position: absolute;
+    float: left;
+    background-color: #0d5d80;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vw;
+    height: 72%;
+    align-self: stretch;
+    margin-right: 0;
+    padding-bottom: 20%;
+  }
+
+  .footer {
+    position: absolute;
+    width: 80%;
+    padding-top: 0;
+    top: 82%;
+    margin: 1rem;
+  }
+}

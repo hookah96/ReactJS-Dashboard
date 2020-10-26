@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  background-color: #004c6d;
+  color: white;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 0 1rem 0 1rem;
+}
+
+.logo {
+  width: 20%;
+}
+
+.dashboard {
+  text-transform: uppercase;
+  width: 70%;
+}
+
+.actions {
+  display: flex;
+  width: 10%;
+  align-items: center;
+}
+
+.actions > img,
+p {
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 30%;
+    margin-left: -10%;
+  }
+
+  .dashboard {
+    width: auto;
+    font-size: 0.9rem;
+    margin-left: -10%;
+  }
+
+  .actions {
+    margin-left: -5%;
+    margin-right: 5%;
+    width: 20%;
+  }
+
+  .actions > img,
+  p {
+    padding-left: 0;
+    margin: 0.5vw;
+    font-size: 0.7rem;
+  }
+
+  .hamburger {
+    width: 6vw;
+    height: 6vh;
+    /* position: fixed; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 770px) {
+  .dashboard {
+    width: 60%;
+  }
+
+  .actions {
+    width: 10%;
+    margin-left: 2rem;
+  }
+
+  .actions > img,
+  p {
+    padding-left: 0.5rem;
+  }
+}
