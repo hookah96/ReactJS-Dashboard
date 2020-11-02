@@ -1,4 +1,4 @@
-<h4>Responsive Dashboard using React.js, HTML3 and CSS3.</h4>
+<h4>Responsive Dashboard using React.js, HTML5 and CSS3.</h4>
 
 Interview Project for © Netmechanics2020.
 
